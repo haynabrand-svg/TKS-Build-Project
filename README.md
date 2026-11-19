@@ -1,59 +1,62 @@
 # TKS Build Project
-## Preliminary technical study — solar-powered water pumping in Senegal
 
-### 1. Project objective
-This project examines the basic operation and preliminary energy requirements of a solar-powered water-pumping installation reportedly located in Notto, Senegal. The aim is to organize the available information, make a transparent first-order estimate, and identify the technical data needed before drawing conclusions about performance.
+[🇫🇷 Français](README.md) | [🇬🇧 English](README.en.md)
 
-### 2. Information currently available
+## Étude technique préliminaire — pompage d'eau à l'énergie solaire au Sénégal
 
-| Item | Reported value | Status |
+### 1. Objectif du projet
+Ce projet examine le fonctionnement général et les besoins énergétiques préliminaires d'une installation de pompage d'eau à l'énergie solaire signalée à Notto, au Sénégal. L'objectif est d'organiser les informations disponibles, de réaliser une première estimation transparente et d'identifier les données techniques nécessaires avant de conclure sur les performances.
+
+### 2. Informations actuellement disponibles
+
+| Élément | Valeur annoncée | Statut |
 |---|---:|---|
-| Location | Notto, Senegal | To confirm precisely |
-| PV array capacity | 15 kWp | Reported; technical documentation not yet obtained |
-| Water output | 50 m³/day | Reported; measured records not yet obtained |
-| Pump type and model | Unknown | To request |
-| Total dynamic head (HMT) | Unknown | To measure/calculate |
+| Localisation | Notto, Sénégal | À confirmer précisément |
+| Puissance du champ photovoltaïque | 15 kWc | Annoncée ; documentation technique non obtenue |
+| Volume d'eau produit | 50 m³/jour | Annoncé ; relevés de mesure non obtenus |
+| Type et modèle de pompe | Inconnus | À demander |
+| Hauteur manométrique totale (HMT) | Inconnue | À mesurer/calculer |
 
-The figures above are preliminary project inputs, not independently verified measurements.
+Ces données sont des éléments préliminaires et ne constituent pas des mesures vérifiées indépendamment.
 
-### 3. How the system works
-Solar modules generate DC electricity. A suitable controller or variable-speed drive manages the electrical supply to the pump. The pump lifts water through the pipework to a storage tank, from which water can be distributed. The exact electrical configuration and any storage or backup equipment remain to be confirmed.
+### 3. Fonctionnement général du système
+Les panneaux solaires produisent de l'électricité en courant continu. Un contrôleur adapté ou un variateur de vitesse gère l'alimentation électrique de la pompe. Celle-ci achemine l'eau par les conduites vers un réservoir de stockage, avant sa distribution. La configuration électrique exacte et la présence éventuelle d'un stockage ou d'une alimentation de secours restent à confirmer.
 
-See [the system flow diagram](diagrams/system-flow.md).
+Voir le [schéma de fonctionnement](diagrams/system-flow.md).
 
-### 4. Preliminary hydraulic and energy estimate
-A simplified calculation is provided using explicitly hypothetical assumptions:
-- Daily water volume: 50 m³/day
-- Total dynamic head: 30 m
-- Overall pump-system efficiency: 60%
-- Pumping duration: 6 hours/day
+### 4. Estimation hydraulique et énergétique préliminaire
+Une estimation simplifiée est présentée à partir des hypothèses explicitement théoriques suivantes :
+- Volume journalier : 50 m³/jour
+- Hauteur manométrique totale : 30 m
+- Rendement global du système de pompage : 60 %
+- Durée de pompage : 6 heures/jour
 
-Under these assumptions:
-- Required average flow during pumping: approximately 8.33 m³/h
-- Hydraulic/electrical energy estimate: approximately 6.81 kWh/day
-- Average electrical power during the 6-hour pumping period: approximately 1.14 kW
+Avec ces hypothèses :
+- Débit moyen requis pendant le pompage : environ 8,33 m³/h
+- Énergie estimée : environ 6,81 kWh/jour
+- Puissance électrique moyenne pendant les 6 heures de pompage : environ 1,14 kW
 
-**This is an illustrative estimate, not a system validation or final equipment sizing.** The actual energy requirement depends strongly on measured water levels, total dynamic head, pipe losses, pump performance and operating conditions. See [calculation details](calculations/energy-calculation.md).
+**Il s'agit d'une estimation illustrative, et non d'une validation de l'installation ni d'un dimensionnement final.** Le besoin réel dépend notamment des niveaux d'eau mesurés, de la HMT, des pertes de charge, des performances de la pompe et des conditions d'exploitation. Voir le [détail du calcul](calculations/energy-calculation.md).
 
-### 5. Key information still needed
-The most important missing data are:
-- Borehole depth and static/dynamic water levels
-- Total dynamic head, including elevation and pipe losses
-- Pump manufacturer, model, rated power and pump curve
-- Controller / variable-speed drive model and configuration
-- Actual flow rate and daily operating hours
-- Tank capacity
-- Measured daily water volumes and seasonal variation
-- PV array configuration and measured production profile
+### 5. Informations techniques encore nécessaires
+Les principales données manquantes sont :
+- Profondeur du forage et niveaux d'eau statique et dynamique
+- HMT, y compris le dénivelé et les pertes de charge
+- Fabricant, modèle, puissance nominale et courbe de la pompe
+- Modèle et configuration du contrôleur ou variateur
+- Débit réel et durée quotidienne de fonctionnement
+- Capacité du réservoir
+- Volumes journaliers réellement mesurés et variations saisonnières
+- Configuration du champ photovoltaïque et profil de production mesuré
 
-See the [missing-data checklist](research/missing-data.md).
+Voir la [liste des données à obtenir](research/missing-data.md).
 
-### 6. Provisional conclusion
-The reported figures (15 kWp PV capacity and 50 m³/day water output) are not enough on their own to establish whether the installation is correctly sized or how efficiently it operates. A reliable assessment requires the hydraulic operating point, pump curve, controller details and measured production data. The estimate in this repository is only a transparent starting point.
+### 6. Conclusion provisoire
+Les valeurs annoncées (15 kWc de puissance photovoltaïque et 50 m³/jour de production d'eau) ne suffisent pas à déterminer si l'installation est correctement dimensionnée ni à évaluer son rendement. Une analyse fiable nécessite le point de fonctionnement hydraulique, la courbe de la pompe, les caractéristiques du contrôleur et des données réelles de production. L'estimation présentée ici constitue uniquement un point de départ transparent.
 
-### 7. Project status
-**Version:** V1 — preliminary analysis  
-**Next step:** obtain technical specifications and operating measurements from the operator, then revise the calculations using confirmed data.
+### 7. État du projet
+**Version :** V1 — analyse préliminaire  
+**Prochaine étape :** obtenir les spécifications techniques et les mesures d'exploitation auprès de l'opérateur, puis mettre à jour les calculs avec des données confirmées.
 
 ---
-*This document is an independent preliminary study. Reported installation data should be confirmed with the operator before being treated as verified facts.*
+*Ce document constitue une étude préliminaire indépendante. Les données annoncées concernant l'installation doivent être confirmées par l'opérateur avant d'être considérées comme vérifiées.*
